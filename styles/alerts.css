@@ -1,0 +1,20 @@
+.panel-flotante{
+	position:fixed;
+	top:10%;
+	left: 0px;
+}
+.alert-close{
+	cursor:pointer;
+}
+.alert-close:hover{
+	color:black;
+}
+.alerts-deshacer{
+	border-left:1px solid rgba(0,0,0,0.5);
+	padding:0px 5px;
+	color:black;
+	cursor:pointer;
+}
+.alerts-deshacer:hover{
+	text-decoration: underline;
+}

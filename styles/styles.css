@@ -1,0 +1,173 @@
+.price-up{
+	color:red;
+}
+.price-down{
+	color:green;
+}
+.price-same{
+	color:blue;
+}
+.producto-nombre{
+	font-weight:bold;
+	color:#666666;
+	height: 55px;
+}
+.producto-precio-grande{
+	font-size:14pt;
+}
+.precio-body{
+    font-style: italic;
+}
+.producto-footer{
+	padding-top:3px;
+    border-top: 1px solid #DDDDDD;
+}
+.tabla-precios-comparacion th{
+	background-color: #e0f0f0;
+}
+.tabla-precios th{
+	background-color: #e0f0f0;
+}
+
+.tabla-precios tr:last-child td{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.producto-item{
+	padding:3px;
+	font-size:9pt;
+	text-align:center;
+	border:2px solid #cccccc;
+	height:275px;
+	margin-bottom:5px;
+    max-width: 240px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(100,100,100,0.7);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(100,100,100,0.7);
+    box-shadow: 1px 1px 2px 1px rgba(100,100,100,0.7);
+    border:none;
+    display:inline-block;
+}
+
+.producto-item-negocio-img{
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+.producto-item-negocio-img:hover{
+	border: 1px solid rgba(0,0,0,0.4);	
+}
+
+.producto-item-negocio-img-tabla{
+	height: 25px;
+	width: 25px;
+}
+/*---GARBARINO---*/
+.producto-garbarino{
+	background-color:rgb(255, 170, 170);
+}
+.producto-garbarino img, .producto-garbarino .btn,
+.producto-garbarino td,
+.producto-garbarino th{
+	border: 1px solid rgb(215, 130, 130);
+}
+.producto-garbarino .tabla-precios tr:nth-last-child(2) td{
+    border-bottom: 1px solid rgb(175, 90, 90);
+}
+.producto-garbarino .tabla-precios tr:last-child td{
+    border: 1px solid rgb(175, 90, 90);
+}
+.producto-garbarino footer{
+	border-top: 1px solid rgb(215, 130, 130);
+}
+
+/*---FRAVEGA---*/
+.producto-fravega{
+	background-color:rgb(240, 200, 255);
+}
+.producto-fravega img, .producto-fravega .btn,
+.producto-fravega td,
+.producto-fravega th{
+	border: 1px solid rgb(200, 160, 215);
+}
+.producto-fravega .tabla-precios tr:nth-last-child(2) td{
+    border-bottom: 1px solid rgb(160, 120, 175);
+}
+.producto-fravega .tabla-precios tr:last-child td{
+    border: 1px solid rgb(160, 120, 175);
+}
+.producto-fravega footer{
+	border-top: 1px solid rgb(200, 160, 215);
+}
+
+/*---LA CASA DEL AUDIO---*/
+.producto-lacasa{
+	background-color:rgb(255, 255, 187);
+}
+.producto-lacasa img, .producto-lacasa .btn,
+.producto-lacasa td,
+.producto-lacasa th{
+	border: 1px solid rgb(215, 215, 147);
+}
+.producto-lacasa .tabla-precios tr:nth-last-child(2) td{
+    border-bottom: 1px solid rgb(175, 175, 107);
+}
+.producto-lacasa .tabla-precios tr:last-child td{
+    border: 1px solid rgb(175, 175, 107);
+}
+.producto-lacasa footer{
+	border-top: 1px solid rgb(215, 215, 147);
+}
+
+/*---TIO MUSA---*/
+.producto-tiomusa{
+	background-color:rgb(187, 187, 255);
+}
+.producto-tiomusa img, .producto-tiomusa .btn,
+.producto-tiomusa td,
+.producto-tiomusa th{
+	border: 1px solid rgb(147, 147, 215);
+}
+.producto-tiomusa .tabla-precios tr:nth-last-child(2) td{
+    border-bottom: 1px solid rgb(107, 107, 175);
+}
+.producto-tiomusa .tabla-precios tr:last-child td{
+    border: 1px solid rgb(107, 107, 175);
+}
+.producto-tiomusa footer{
+	border-top: 1px solid rgb(147, 147, 215);
+}
+
+/*---RIBEIRO---*/
+.producto-ribeiro{
+	background-color:rgb(255, 195, 155);
+}
+.producto-ribeiro img, .producto-ribeiro .btn,
+.producto-ribeiro td,
+.producto-ribeiro th{
+	border: 1px solid rgb(215, 155, 115);
+}
+.producto-ribeiro .tabla-precios tr:nth-last-child(2) td{
+    border-bottom: 1px solid rgb(175, 115, 75);
+}
+.producto-ribeiro .tabla-precios tr:last-child td{
+    border: 1px solid rgb(107, 107, 175);
+}
+.producto-ribeiro footer{
+	border-top: 1px solid rgb(215, 155, 115);
+}
+
+/*---MEJOR---*/
+.producto-mejor{
+	background-color:rgb(155, 255, 155);
+}
+.producto-mejor img, .producto-ribeiro .btn,
+.producto-mejor td,
+.producto-mejor th{
+	border: 1px solid rgb(115, 215, 115);
+}
+.producto-mejor footer{
+	border-top: 1px solid rgb(115, 215, 115);
+}
+

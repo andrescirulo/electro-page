@@ -1,0 +1,63 @@
+<div class="row">
+	<h2 class="col-xs-12">{{categoria.nombre}}</h2>
+	<div class="col-xs-12">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="elem_negocio">Negocio</label>
+				<select ng-options="negocio as negocio.nombre for negocio in negocios track by negocio.id" 
+					ng-model="filtroNegocio" id="elem_negocio" class="form-control"></select>
+			</div>
+			<div class="form-group">
+				<input type="text" ng-model="filtroNombre" class="form-control"/>
+			</div>
+			<button class="btn btn-secondary" ng-click="buscar()"><span class="fa fa-search"></span></button>
+		</form>
+	</div>
+	<div class="col-xs-12">
+		<div class="row-fluid">
+			<div ng-repeat="producto in productos | orderBy:'nombre' " class="col-xs-3" 
+				style="padding-right: 0.4rem;padding-left: 0.4rem;text-align:center">
+				<div ng-style="getStyleByNegocio(producto)" class="card-block" >
+					<div style="height:205px">
+						<div ng-if="producto.estado==null || producto.estado==1">
+							<img class="img-fluid center-block" style="max-height:120px" ng-src="{{armarUrlImagen(producto)}}">
+							<div>{{producto.nombre}}</div>
+							<div>Desde ${{producto.precio_minimo}}</div>
+						</div>
+						
+						<div ng-if="producto.estado==2">
+							<div>{{producto.nombre}}</div>
+							<span ng-if="producto.detalles==null" class="fa fa-spin fa-gear"></span>
+							<div ng-if="producto.detalles!=null">
+								<div>Precios</div>
+							</div>
+							
+						</div>
+					</div>
+					<div style="height:35px">
+						<footer ng-if="producto.estado==null || producto.estado==1">
+							<button class="btn btn-sm btn-secondary" ng-click="verDetalles(producto,2)">Detalles</button>
+							<a ng-href="{{producto.url}}" target="_blank" class="btn btn-sm btn-secondary">
+								<span class="fa fa-link"></span>
+							</a>
+						</footer>
+						<footer ng-if="producto.estado==2">
+							<button class="btn btn-sm btn-secondary" ng-click="verDetalles(producto,1)">Volver</button>
+							<a ng-href="{{producto.url}}" target="_blank" class="btn btn-sm btn-secondary">
+								<span class="fa fa-link"></span>
+							</a>
+						</footer>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12" style="text-align:center">
+		<uib-pagination total-items="totalProductos" ng-model="pagina" 
+			max-size="5" class="pagination-sm" ng-change="getPagina()" items-per-page="16"
+			first-text="Primera" last-text="Última" next-text="Siguiente" previous-text="Anterior"
+			boundary-link-numbers="true"></uib-pagination>
+	</div>
+	
+	
+</div>

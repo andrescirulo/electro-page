@@ -1,0 +1,86 @@
+<md-card style="text-align:center">
+<!-- 	<img style="max-height:120px" class="md-card-image" ng-src="{{armarUrlImagen()}}"> -->
+  	<md-card-content>
+  		<img class="img-fluid center-block" style="max-height:120px" ng-src="{{armarUrlImagen()}}">
+  	</md-card-content>
+	<md-card-title>
+	    <md-card-title-text>
+	      <span class="md-subheadline">{{producto.nombre}}</span>
+	    </md-card-title-text>
+  	</md-card-title>
+<!-- 	<div ng-class="getClassByNegocio()"  > -->
+<!-- 		<div style="text-align:left;margin-bottom:3px;"> -->
+<!-- 			<img class="producto-item-negocio-img" -->
+<!-- 				ng-repeat="prodNeg in producto.prodNegocios"  -->
+<!-- 				ng-click="setSeleccionado(prodNeg)" title="{{getTitleByNegocio(prodNeg.negocio)}}" -->
+<!-- 				ng-src="imagenes/mini_neg_{{getIdImgNeg(prodNeg)}}.png"/> -->
+<!-- 		</div> -->
+<!-- 		<div style="height:205px;overflow:auto"> -->
+<!-- 			<div ng-if="producto.estado==null || producto.estado==1"> -->
+<!-- 				<img class="img-fluid center-block" style="max-height:120px" ng-src="{{armarUrlImagen()}}"> -->
+<!-- 				<div class="producto-nombre">{{producto.nombre}}</div> -->
+<!-- 				<div><span ng-if="producto.seleccionado.negocio<0">Desde </span> -->
+<!-- 					<span class="producto-precio-grande">${{producto.seleccionado.precioMinimo}}</span> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+			
+<!-- 			<div ng-if="producto.estado==2"> -->
+<!-- 				<div class="producto-nombre">{{producto.nombre}}</div> -->
+<!-- 				<span ng-if="producto.seleccionado.detalles==null" class="fa fa-spin fa-gear"></span> -->
+<!-- 				<div ng-if="producto.seleccionado.detalles!=null"> -->
+<!-- 					<table class="table-sm tabla-precios table-striped" style="display:inline-block"> -->
+<!-- 						<thead> -->
+<!-- 							<tr><th colspan="2" style="text-align:center">Precios</th></tr> -->
+<!-- 						</thead> -->
+<!-- 						<tbody> -->
+<!-- 							<tr ng-repeat="detalle in producto.seleccionado.detalles"> -->
+<!-- 								<td>{{detalle.fecha | date}}</td> -->
+<!-- 								<td>${{detalle.precio}} <span ng-class="getClaseCambio(detalle)"></span></td> -->
+<!-- 							</tr> -->
+<!-- 						</tbody> -->
+<!-- 					</table> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+			
+<!-- 			<div ng-if="producto.estado==3"> -->
+<!-- 				<div class="producto-nombre">{{producto.nombre}}</div> -->
+<!-- 				<div> -->
+<!-- 					<table class="table-sm tabla-precios-comparacion table-striped" style="display:inline-block"> -->
+<!-- 						<thead> -->
+<!-- 							<tr><th colspan="4" style="text-align:center">Precios</th></tr> -->
+<!-- 						</thead> -->
+<!-- 						<tbody> -->
+<!-- 							<tr ng-repeat="fila in comparacion"> -->
+<!-- 								<td><img class="producto-item-negocio-img-tabla" -->
+<!-- 									title="{{getTitleByNegocio(fila.negocio)}}" -->
+<!-- 									ng-src="imagenes/mini_neg_{{fila.negocio}}.png"/></td> -->
+<!-- 								<td style="text-align:left">{{fila.negocioNombre}}</td> -->
+<!-- 								<td>${{fila.precio}}</td> -->
+<!-- 								<td><a ng-href="{{fila.url}}" target="_blank" class="btn btn-sm btn-secondary"> -->
+<!-- 									Ver -->
+<!-- 								</a></td> -->
+<!-- 							</tr> -->
+<!-- 						</tbody> -->
+<!-- 					</table> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 		<div style="height:35px"> -->
+<!-- 			<footer class="producto-footer" ng-if="(producto.estado==null || producto.estado==1) && producto.seleccionado.negocio<0"> -->
+<!-- 				<button class="btn btn-sm btn-secondary" ng-click="verDetalles(3)">Comparar Precios</button> -->
+<!-- 				<a ng-href="{{getUrlProducto()}}" target="_blank" class="btn btn-sm btn-secondary"> -->
+<!-- 					<span class="fa fa-link"></span> -->
+<!-- 				</a> -->
+<!-- 			</footer> -->
+<!-- 			<footer class="producto-footer" ng-if="(producto.estado==null || producto.estado==1) && producto.seleccionado.negocio>0"> -->
+<!-- 				<button class="btn btn-sm btn-secondary" ng-click="verDetalles(2)">Historial Precios</button> -->
+<!-- 				<a ng-href="{{getUrlProducto()}}" target="_blank" class="btn btn-sm btn-secondary"> -->
+<!-- 					<span class="fa fa-link"></span> -->
+<!-- 				</a> -->
+<!-- 			</footer> -->
+<!-- 			<footer class="producto-footer" ng-if="producto.estado>=2"> -->
+<!-- 				<button class="btn btn-sm btn-secondary" ng-click="verDetalles(1)">Volver</button> -->
+<!-- 			</footer> -->
+<!-- 		</div> -->
+<!-- 	</div>  -->
+</md-card>

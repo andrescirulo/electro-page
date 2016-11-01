@@ -1,0 +1,7 @@
+<div ng-if="$alerts.currentAlert!=null" style="width:100%;text-align:center;" class="panel-flotante">
+	<div id="mensajesPanelFlotante" ng-class="$alerts.currentStyle" style="display:inline-block;" >
+		{{$alerts.currentAlert}}
+		<span ng-if="$alerts.undoFunction!=null" ng-click="$alerts.undoFunction();$alerts.closeAlert()" class="alerts-deshacer">Deshacer</span>
+		<span class="fa fa-times alert-close" ng-click="$alerts.closeAlert()"></span>
+	</div>
+</div>

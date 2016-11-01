@@ -1,0 +1,35 @@
+<div layout="column">
+	<h2>{{categoria.nombre}}</h2>
+	<div layout="column">
+		<form>
+			<div layout="row" layout-xs="column">
+				<md-input-container class="md-block" flex-xs="100" flex-gt-xs="50">
+		            <label>Negocio</label>
+		            <md-select ng-model="filtroNegocio">
+		              <md-option ng-repeat="negocio in negocios" ng-value="negocio">
+		                {{negocio.nombre}}
+		              </md-option>
+		            </md-select>
+	          	</md-input-container>
+	          	<md-input-container class="md-block" flex-xs="70" flex-gt-xs="50">
+		            <label>Nombre</label>
+		            <input type="text" ng-model="filtroNombre" class="form-control"/>
+	            </md-input-container>
+	            <md-button class="md-raised" ng-click="buscar()" flex-xs="30"><span class="fa fa-search"></span>Buscar</md-button>
+        	</div>
+		</form>
+	</div>
+	<div layout="row" layout-wrap>
+		<item-producto flex="15" ng-repeat="producto in productos | orderBy:'nombre'" 
+			it-producto="producto" it-negocios="negocios">
+		</item-producto>
+	</div>
+	<div class="col-xs-12" style="text-align:center">
+		<uib-pagination total-items="totalProductos" ng-model="pagina" 
+			max-size="5" class="pagination-sm" ng-change="getPagina()" items-per-page="16"
+			first-text="Primera" last-text="Última" next-text="Siguiente" previous-text="Anterior"
+			boundary-link-numbers="true"></uib-pagination>
+	</div>
+	
+	
+</div>

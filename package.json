@@ -1,0 +1,25 @@
+{
+  "name": "electropage",
+  "version": "0.0.1",
+  "description": "Description for ElectroPage",
+  "private": true,
+  "cacheDirectories": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bower": "^1.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "browser-sync": "^2.12.1"
+  },
+  "engines": {
+    "node": "^0.12 || ^4.2"
+  },
+  "otrasDependencias":{
+  	"gulp-babel":"^6.1.2",
+    "babel-polyfill":"^6.7.4"
+  }
+}

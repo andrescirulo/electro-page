@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electro Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel='stylesheet' href='bower_components/tether/dist/css/tether.min.css'>
+	<link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='bower_components/font-awesome/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css'>
+	<link rel='stylesheet' href='bower_components/angular-material/angular-material.min.css'>
+	
+	<link rel='stylesheet' href='styles/alerts.css'>
+	<link rel='stylesheet' href='styles/styles.css'>
+	
+	<script src='bower_components/jquery/dist/jquery.min.js'></script>
+	<script src='bower_components/tether/dist/js/tether.min.js'></script>
+	<script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+	<script src='bower_components/angular/angular.min.js'></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+	<script src='bower_components/angular-resource/angular-resource.min.js'></script>
+	<script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+	<script src='scripts/ui-bootstrap-tpls-1.3.3.js'></script>
+	
+	<script src='bower_components/angular-material/angular-material.min.js'></script>
+</head>
+<body ng-app="electroPageApp" layout="row">
+	<script src='scripts/app.js'></script>
+	<script src='scripts/directives.js'></script>
+	<script src='scripts/routes.js'></script>
+	<script src='scripts/utils.js'></script>
+	<script src='scripts/item-producto.directive.js'></script>
+	
+	<script src='scripts/controllers/alert.controller.js'></script>
+	<script src='scripts/controllers/navbar.controller.js'></script>
+	<script src='scripts/controllers/inicio.controller.js'></script>
+	<script src='scripts/controllers/categoria.controller.js'></script>
+	
+	<script src='scripts/services/alert.service.js'></script>
+	<script src='scripts/services/date-util.service.js'></script>
+	<script src='scripts/services/categoria.service.js'></script>
+	<script src='scripts/services/negocio.service.js'></script>
+	<script src='scripts/services/producto.service.js'></script>
+	
+	
+<!-- 	<div class="container" style="background-color: white;border: thin #D5D5D5 solid;min-height: 800px;padding:0px"> -->
+	<div layout="column">
+		<div ui-view="navbar" ng-cloak=""></div>
+		<md-content md-scroll-y ui-view="content" style="padding:10px"></md-content>
+		<div ui-view="alert" ng-cloak=""></div>
+	</div>
+<!-- 	</div> -->
+</body>
+</html>

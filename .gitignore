@@ -1,0 +1,4 @@
+bower_components/**
+node_modules/**
+server/errors.log
+out.txt
