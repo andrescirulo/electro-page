@@ -2,7 +2,7 @@ var electroPageApp = angular.module('electroPageApp', [
   'ui.router','ngResource','ui.bootstrap','ngMaterial'
 ]);
 
-electroPageApp.config(function ($httpProvider){
+electroPageApp.config(['$httpProvider',function ($httpProvider){
 	$httpProvider.defaults.transformRequest = function(data){
 	    if (data === undefined) {
 	      return data;
@@ -12,14 +12,14 @@ electroPageApp.config(function ($httpProvider){
 	  
 	  $httpProvider.defaults.headers.post['Content-Type'] = ''
 	    + 'application/x-www-form-urlencoded; charset=UTF-8';
-});
+}]);
 
-electroPageApp.config(function($mdThemingProvider) {
+electroPageApp.config(['$mdThemingProvider',function($mdThemingProvider) {
 	  $mdThemingProvider.theme('default')
 	    .primaryPalette('orange')
 	    .accentPalette('green')
 	    .warnPalette('red');
-});
+}]);
 
 electroPageApp.factory('$context', function() {
 	var context={};

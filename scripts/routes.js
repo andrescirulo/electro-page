@@ -1,4 +1,4 @@
-electroPageApp.config(function($stateProvider, $urlRouterProvider) {
+electroPageApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
 	//
 	// For any unmatched url, redirect to /state1
 	$urlRouterProvider.otherwise("/inicio");
@@ -38,4 +38,4 @@ electroPageApp.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		});
-});
+}]);

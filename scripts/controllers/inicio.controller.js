@@ -1,2 +1,3 @@
-electroPageApp.controller('InicioCtrl',function($scope,$utils){
-});
+electroPageApp.controller('InicioCtrl',['$scope','$utils',
+    function($scope,$utils){
+}]);

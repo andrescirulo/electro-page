@@ -1,7 +1,7 @@
 'use strict';
 
 electroPageApp
-    .service('DateUtils', function ($filter) {
+    .service('DateUtils',['$filter', function ($filter) {
 
     this.convertLocaleDateToServer = function(date) {
         if (date) {
@@ -39,4 +39,4 @@ electroPageApp
     this.dateformat = function() {
         return 'yyyy-MM-dd';
     }
-});
+}]);

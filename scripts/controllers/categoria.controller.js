@@ -1,4 +1,5 @@
-electroPageApp.controller('CategoriaCtrl',function($scope,$stateParams,$utils,Categoria,Negocio,$alerts){
+electroPageApp.controller('CategoriaCtrl',['$scope','$stateParams','$utils','Categoria','Negocio','$alerts',
+   function($scope,$stateParams,$utils,Categoria,Negocio,$alerts){
 	$scope.init = function(){
 		$scope.pagina=1;
 		Negocio.query(function(resp){
@@ -91,4 +92,4 @@ electroPageApp.controller('CategoriaCtrl',function($scope,$stateParams,$utils,Ca
 //	}
 	
 	$scope.init();
-});
+}]);
