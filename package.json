@@ -13,7 +13,12 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.1",
-    "browser-sync": "^2.12.1"
+    "browser-sync": "^2.12.1",
+    "gulp-uglify":"^1.5.4",
+    "pump": "^1.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-clean-css":"^2.0.10"
   },
   "engines": {
     "node": "^0.12 || ^4.2"
